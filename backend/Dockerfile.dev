@@ -1,0 +1,5 @@
+# Usar a imagem Node 22 (LTS)
+FROM node:22-alpine
+
+# Definir o diretório de trabalho
+WORKDIR /app
