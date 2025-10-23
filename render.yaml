@@ -12,13 +12,13 @@ services:
     branch: main
     autoDeploy: yes
     dockerfilePath: ./backend/Dockerfile
+
     healthCheck:
       path: /api/health
       initialDelaySeconds: 30
     envVars:
       - key: NODE_ENV
         value: production
-        
       - key: DB_HOST
         fromDatabase:
           name: biblioteca-db-prod
@@ -37,7 +37,6 @@ services:
         fromDatabase:
           name: biblioteca-db-prod
           property: database
-
       - key: JWT_SECRET
         sync: false
       - key: JWT_EXPIRES_IN
