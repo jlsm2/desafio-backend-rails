@@ -8,8 +8,6 @@ services:
   - type: web
     name: backend
     runtime: docker
-    repo: https://github.com/seu-usuario/biblioteca-api-desafio.git
-    autoDeploy: yes
     dockerfilePath: ./backend/Dockerfile
     plan: free
     envVars:
