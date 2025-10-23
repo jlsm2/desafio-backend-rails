@@ -9,7 +9,7 @@ services:
     name: backend
     runtime: docker
     repo: https://github.com/seu-usuario/biblioteca-api-desafio.git
-    branch: main
+    branch: master
     autoDeploy: yes
     dockerfilePath: ./backend/Dockerfile
     plan: free
