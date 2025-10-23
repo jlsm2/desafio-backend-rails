@@ -1,0 +1,44 @@
+databases:
+  - name: biblioteca-db-prod
+    databaseName: biblioteca_db
+    user: biblioteca_admin
+    plan: free
+
+services:
+  - type: web
+    name: backend
+    runtime: docker
+    repo: https://github.com/seu-usuario/biblioteca-api-desafio.git
+    branch: main
+    autoDeploy: yes
+    dockerfilePath: ./backend/Dockerfile
+    healthCheck:
+      path: /api/health
+      initialDelaySeconds: 30
+    envVars:
+      - key: NODE_ENV
+        value: production
+        
+      - key: DB_HOST
+        fromDatabase:
+          name: biblioteca-db-prod
+          property: host
+      - key: DB_PORT
+        value: 5432
+      - key: DB_USER
+        fromDatabase:
+          name: biblioteca-db-prod
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: biblioteca-db-prod
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: biblioteca-db-prod
+          property: database
+
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 1d
