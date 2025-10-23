@@ -1,5 +1,3 @@
-// backend/src/auth/auth.module.ts
-
 import { Module } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
@@ -16,12 +14,16 @@ import { JwtStrategy } from './strategy/jwt.strategy';
     JwtModule.registerAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (configService: ConfigService) => ({
-        secret: configService.get<string>('JWT_SECRET'),
-        signOptions: {
-          expiresIn: configService.get('JWT_EXPIRES_IN'),
-        },
-      }),
+      useFactory: (configService: ConfigService) => {
+        const secret = configService.get<string>('JWT_SECRET');
+        console.log('AuthModule JWT_SECRET:', secret);
+        return {
+          secret,
+          signOptions: {
+            expiresIn: configService.get('JWT_EXPIRES_IN'),
+          },
+        };
+      },
     }),
   ],
   controllers: [AuthController],

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1761177951665" clover="3.2.0">
+  <project timestamp="1761177951665" name="All files">
+    <metrics statements="457" coveredstatements="376" conditionals="231" coveredconditionals="181" methods="87" coveredmethods="65" elements="775" coveredelements="622" complexity="0" loc="457" ncloc="457" packages="16" files="37" classes="37"/>
+    <package name="src">
+      <metrics statements="33" coveredstatements="9" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="3"/>
+      <file name="app.controller.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\app.controller.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="app.module.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\app.module.ts">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+      </file>
+      <file name="app.service.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\app.service.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="main.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\main.ts">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.auth">
+      <metrics statements="43" coveredstatements="30" conditionals="26" coveredconditionals="20" methods="7" coveredmethods="6"/>
+      <file name="auth.controller.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\auth\auth.controller.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="12" coveredconditionals="9" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="12" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="auth.module.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\auth\auth.module.ts">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+      <file name="auth.service.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\auth\auth.service.ts">
+        <metrics statements="21" coveredstatements="20" conditionals="14" coveredconditionals="11" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="6" type="cond" truecount="6" falsecount="2"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="35" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="41" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.auth.dto">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="login.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\auth\dto\login.dto.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.auth.strategy">
+      <metrics statements="16" coveredstatements="16" conditionals="10" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <file name="jwt.strategy.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\auth\strategy\jwt.strategy.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="10" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="6" falsecount="2"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.autor">
+      <metrics statements="58" coveredstatements="50" conditionals="30" coveredconditionals="23" methods="18" coveredmethods="17"/>
+      <file name="autor.controller.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\autor.controller.ts">
+        <metrics statements="21" coveredstatements="21" conditionals="16" coveredconditionals="12" methods="7" coveredmethods="7"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="7" type="cond" truecount="3" falsecount="1"/>
+        <line num="29" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+      </file>
+      <file name="autor.module.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\autor.module.ts">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+      <file name="autor.resolver.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\autor.resolver.ts">
+        <metrics statements="9" coveredstatements="8" conditionals="8" coveredconditionals="6" methods="4" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="autor.service.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\autor.service.ts">
+        <metrics statements="21" coveredstatements="21" conditionals="6" coveredconditionals="5" methods="7" coveredmethods="7"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="14" count="10" type="cond" truecount="3" falsecount="1"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="41" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.autor.dto">
+      <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="6" methods="0" coveredmethods="0"/>
+      <file name="create-autor-instituicao.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\dto\create-autor-instituicao.dto.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="create-autor-pessoa.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\dto\create-autor-pessoa.dto.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="3" falsecount="1"/>
+      </file>
+      <file name="update-autor.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\dto\update-autor.dto.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.autor.entities">
+      <metrics statements="13" coveredstatements="12" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="0"/>
+      <file name="autor.entity.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\entities\autor.entity.ts">
+        <metrics statements="13" coveredstatements="12" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="26" count="10" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="35" count="10" type="cond" truecount="3" falsecount="1"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="42" count="10" type="cond" truecount="3" falsecount="1"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="49" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.autor.enums">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="autor-tipo.enum.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\enums\autor-tipo.enum.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.autor.graphql">
+      <metrics statements="21" coveredstatements="12" conditionals="12" coveredconditionals="6" methods="5" coveredmethods="0"/>
+      <file name="autor.types.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\autor\graphql\autor.types.ts">
+        <metrics statements="21" coveredstatements="12" conditionals="12" coveredconditionals="6" methods="5" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.material">
+      <metrics statements="103" coveredstatements="94" conditionals="79" coveredconditionals="63" methods="20" coveredmethods="20"/>
+      <file name="material.controller.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\material.controller.ts">
+        <metrics statements="26" coveredstatements="26" conditionals="24" coveredconditionals="18" methods="9" coveredmethods="9"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="8" type="cond" truecount="3" falsecount="1"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="51" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="56" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+      </file>
+      <file name="material.module.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\material.module.ts">
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="material.service.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\material.service.ts">
+        <metrics statements="69" coveredstatements="68" conditionals="55" coveredconditionals="45" methods="11" coveredmethods="11"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="20" type="cond" truecount="6" falsecount="2"/>
+        <line num="29" count="20" type="cond" truecount="3" falsecount="1"/>
+        <line num="31" count="20" type="cond" truecount="3" falsecount="1"/>
+        <line num="33" count="20" type="cond" truecount="3" falsecount="1"/>
+        <line num="34" count="20" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="53" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="60" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="61" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="69" count="3" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="88" count="2" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="102" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="103" count="2" type="stmt"/>
+        <line num="105" count="2" type="stmt"/>
+        <line num="112" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="119" count="2" type="stmt"/>
+        <line num="120" count="2" type="stmt"/>
+        <line num="129" count="7" type="stmt"/>
+        <line num="133" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="134" count="1" type="stmt"/>
+        <line num="136" count="6" type="stmt"/>
+        <line num="145" count="3" type="stmt"/>
+        <line num="146" count="3" type="stmt"/>
+        <line num="148" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="149" count="1" type="stmt"/>
+        <line num="151" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="152" count="0" type="stmt"/>
+        <line num="155" count="1" type="stmt"/>
+        <line num="156" count="1" type="stmt"/>
+        <line num="160" count="2" type="stmt"/>
+        <line num="161" count="2" type="stmt"/>
+        <line num="163" count="1" type="stmt"/>
+        <line num="170" count="10" type="stmt"/>
+        <line num="171" count="10" type="stmt"/>
+        <line num="173" count="3" type="stmt"/>
+        <line num="176" count="7" type="stmt"/>
+        <line num="180" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="181" count="5" type="stmt"/>
+        <line num="182" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="183" count="2" type="stmt"/>
+        <line num="186" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="187" count="2" type="stmt"/>
+        <line num="188" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="189" count="1" type="stmt"/>
+        <line num="195" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="196" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.material.dto">
+      <metrics statements="39" coveredstatements="37" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="0"/>
+      <file name="base-material.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\dto\base-material.dto.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="create-artigo.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\dto\create-artigo.dto.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="create-livro.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\dto\create-livro.dto.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="create-video.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\dto\create-video.dto.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="query-material.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\dto\query-material.dto.ts">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="update-material.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\dto\update-material.dto.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.material.entities">
+      <metrics statements="22" coveredstatements="20" conditionals="16" coveredconditionals="14" methods="4" coveredmethods="0"/>
+      <file name="material.entity.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\entities\material.entity.ts">
+        <metrics statements="22" coveredstatements="20" conditionals="16" coveredconditionals="14" methods="4" coveredmethods="0"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="35" count="10" type="cond" truecount="3" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="49" count="10" type="cond" truecount="3" falsecount="1"/>
+        <line num="54" count="10" type="stmt"/>
+        <line num="61" count="10" type="stmt"/>
+        <line num="64" count="10" type="stmt"/>
+        <line num="69" count="10" type="stmt"/>
+        <line num="75" count="10" type="stmt"/>
+        <line num="80" count="10" type="stmt"/>
+        <line num="82" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.material.enums">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="material-status.enum.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\enums\material-status.enum.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+      </file>
+      <file name="material-tipo.enum.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\material\enums\material-tipo.enum.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.usuario">
+      <metrics statements="62" coveredstatements="51" conditionals="24" coveredconditionals="20" methods="15" coveredmethods="13"/>
+      <file name="usuario.controller.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\usuario\usuario.controller.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+      </file>
+      <file name="usuario.module.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\usuario\usuario.module.ts">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="usuario.service.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\usuario\usuario.service.ts">
+        <metrics statements="36" coveredstatements="31" conditionals="16" coveredconditionals="14" methods="9" coveredmethods="7"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="18" count="12" type="cond" truecount="3" falsecount="1"/>
+        <line num="22" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="57" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="68" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="74" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="84" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="90" count="2" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.usuario.dto">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="create-usuario.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\usuario\dto\create-usuario.dto.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+      </file>
+      <file name="update-usuario.dto.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\usuario\dto\update-usuario.dto.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.usuario.entities">
+      <metrics statements="12" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <file name="usuario.entity.ts" path="C:\Users\Joao Marrocos\Desktop\api-restful-vlab\biblioteca-api\backend\src\usuario\entities\usuario.entity.ts">
+        <metrics statements="12" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="26" count="10" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

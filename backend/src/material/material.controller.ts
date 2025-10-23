@@ -22,7 +22,9 @@ import { CreateArtigoDto } from './dto/create-artigo.dto';
 import { CreateVideoDto } from './dto/create-video.dto';
 import { UpdateMaterialDto } from './dto/update-material.dto';
 import { QueryMaterialDto } from './dto/query-material.dto';
+import { ApiBearerAuth } from '@nestjs/swagger';
 
+@ApiBearerAuth()
 @UseGuards(AuthGuard('jwt'))
 @Controller('material')
 export class MaterialController {

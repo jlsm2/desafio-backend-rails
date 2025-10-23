@@ -16,7 +16,9 @@ import { UpdateUsuarioDto } from './dto/update-usuario.dto';
 import { AuthGuard } from '@nestjs/passport';
 import type { Request } from 'express';
 import { Usuario } from './entities/usuario.entity';
+import { ApiBearerAuth } from '@nestjs/swagger';
 
+@ApiBearerAuth()
 @UseGuards(AuthGuard('jwt'))
 @Controller('usuario')
 export class UsuarioController {

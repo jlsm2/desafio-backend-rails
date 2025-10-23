@@ -1,4 +1,3 @@
-// backend/src/main.ts
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
@@ -18,10 +17,7 @@ async function bootstrap() {
   );
 
   const config = new DocumentBuilder()
-    .setTitle('API - Biblioteca Digital')
-    .setDescription(
-      'Documentação da API RESTful para o desafio da plataforma de biblioteca digital.',
-    )
+    .setTitle('API Biblioteca Digital')
     .setVersion('1.0')
     .addBearerAuth()
     .build();

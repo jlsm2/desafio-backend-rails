@@ -5,6 +5,10 @@ import { AuthModule } from './auth/auth.module';
 import { UsuarioModule } from './usuario/usuario.module';
 import { AutorModule } from './autor/autor.module';
 import { MaterialModule } from './material/material.module';
+import { GraphQLModule } from '@nestjs/graphql';
+import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { join } from 'path';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -26,12 +30,15 @@ import { MaterialModule } from './material/material.module';
       }),
     }),
 
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
+      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      sortSchema: true,
+    }),
+
     AuthModule,
-
     UsuarioModule,
-
     MaterialModule,
-
     AutorModule,
   ],
   controllers: [],

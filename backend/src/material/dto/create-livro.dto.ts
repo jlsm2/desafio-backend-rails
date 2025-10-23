@@ -1,4 +1,11 @@
-import { IsNotEmpty, IsString, Length, IsInt, Min } from 'class-validator';
+import {
+  IsNotEmpty,
+  IsString,
+  Length,
+  IsInt,
+  Min,
+  IsOptional,
+} from 'class-validator';
 import { BaseMaterialDto } from './base-material.dto';
 
 export class CreateLivroDto extends BaseMaterialDto {
@@ -9,6 +16,6 @@ export class CreateLivroDto extends BaseMaterialDto {
 
   @IsInt()
   @Min(1)
-  @IsNotEmpty()
-  numero_paginas: number;
+  @IsOptional()
+  numero_paginas?: number;
 }

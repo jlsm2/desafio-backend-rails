@@ -15,7 +15,6 @@ export class CreateAutorPessoaDto {
   nome: string;
 
   @IsDateString({}, { message: 'Data de nascimento deve ser uma data válida.' })
-  @MaxDate(new Date(), { message: 'Data de nascimento não pode ser futura.' })
   @IsNotEmpty()
   data_nascimento: Date;
 }

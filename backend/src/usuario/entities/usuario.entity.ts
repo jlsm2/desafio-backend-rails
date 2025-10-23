@@ -31,3 +31,5 @@ export class Usuario {
     return bcrypt.compare(senhaDigitada, this.senha);
   }
 }
+
+

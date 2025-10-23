@@ -7,33 +7,26 @@ import { ConflictException, UnauthorizedException } from '@nestjs/common';
 import { Usuario } from '../usuario/entities/usuario.entity';
 import { LoginDto } from './dto/login.dto';
 
-// --- Mocks (Simulações) ---
-
-// 1. Mock do UsuarioService
+// --- Mocks ---
 const mockUsuarioService = {
   create: jest.fn(),
   findOneByEmail: jest.fn(),
 };
 
-// 2. Mock do JwtService
 const mockJwtService = {
   sign: jest.fn(),
 };
 
-// 3. Usuário Falso para testes
 const mockUsuario = new Usuario();
 mockUsuario.id_usuario = 1;
 mockUsuario.email = 'teste@teste.com';
 mockUsuario.senha = 'senha-hashed-123';
-mockUsuario.validatePassword = jest.fn(); // Mock do método da entidade
-
-// --- Fim dos Mocks ---
+mockUsuario.validatePassword = jest.fn();
 
 describe('AuthService', () => {
   let service: AuthService;
 
   beforeEach(async () => {
-    // Reseta os mocks antes de cada teste
     jest.clearAllMocks();
 
     const module: TestingModule = await Test.createTestingModule({
@@ -41,11 +34,11 @@ describe('AuthService', () => {
         AuthService,
         {
           provide: UsuarioService,
-          useValue: mockUsuarioService, // Usa a simulação
+          useValue: mockUsuarioService,
         },
         {
           provide: JwtService,
-          useValue: mockJwtService, // Usa a simulação
+          useValue: mockJwtService,
         },
       ],
     }).compile();
@@ -57,7 +50,7 @@ describe('AuthService', () => {
     expect(service).toBeDefined();
   });
 
-  // --- Testes de Registro (Register) ---
+  // --- Testes de Registro ---
 
   describe('register', () => {
     it('deve registrar um novo usuário com sucesso', async () => {
@@ -66,14 +59,13 @@ describe('AuthService', () => {
         senha: 'senha123',
       };
       
-      // Simula que o usuário foi criado e retorna o mock
       mockUsuarioService.create.mockResolvedValue(mockUsuario);
 
       const resultado = await service.register(dto);
 
       expect(mockUsuarioService.create).toHaveBeenCalledWith(dto);
       expect(resultado).toBeDefined();
-      expect(resultado).not.toHaveProperty('senha'); // Verifica se a senha foi removida
+      expect(resultado).not.toHaveProperty('senha');
     });
 
     it('deve lançar ConflictException se o e-mail já existir', async () => {
@@ -82,10 +74,8 @@ describe('AuthService', () => {
         senha: 'senha123',
       };
 
-      // Simula que o UsuarioService lançou o erro de conflito
       mockUsuarioService.create.mockRejectedValue(new ConflictException());
 
-      // Verifica se o AuthService repassa o erro
       await expect(service.register(dto)).rejects.toThrow(ConflictException);
     });
   });

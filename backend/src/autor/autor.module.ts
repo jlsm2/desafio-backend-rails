@@ -8,13 +8,17 @@ import {
   AutorPessoa,
   AutorInstituicao,
 } from './entities/autor.entity';
+import { AutorResolver } from './autor.resolver';
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([Autor, AutorPessoa, AutorInstituicao]),
   ],
   controllers: [AutorController],
-  providers: [AutorService],
+  providers: [
+    AutorService,
+    AutorResolver,
+  ],
   exports: [AutorService], 
 })
 export class AutorModule {}

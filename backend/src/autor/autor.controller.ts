@@ -16,7 +16,9 @@ import { AuthGuard } from '@nestjs/passport';
 import { CreateAutorPessoaDto } from './dto/create-autor-pessoa.dto';
 import { CreateAutorInstituicaoDto } from './dto/create-autor-instituicao.dto';
 import { UpdateAutorDto } from './dto/update-autor.dto';
+import { ApiBearerAuth } from '@nestjs/swagger';
 
+@ApiBearerAuth()
 @UseGuards(AuthGuard('jwt'))
 @Controller('autor')
 export class AutorController {

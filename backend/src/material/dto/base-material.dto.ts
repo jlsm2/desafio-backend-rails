@@ -6,14 +6,15 @@ import {
   IsEnum,
   IsInt,
   Min,
+  Length,
 } from 'class-validator';
 import { MaterialStatus } from '../enums/material-status.enum';
 
 export class BaseMaterialDto {
   @IsString()
-  @IsNotEmpty()
-  @MaxLength(100)
-  titulo: string;
+  @Length(3, 100)
+  @IsOptional() 
+  titulo?: string;
 
   @IsString()
   @IsOptional()
