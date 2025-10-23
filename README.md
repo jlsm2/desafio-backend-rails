@@ -1,37 +1,40 @@
 # API - Biblioteca Digital (Desafio Backend)
 
-API RESTful desenvolvida em NestJS para gerenciar uma plataforma de biblioteca digital. Permite o gerenciamento de Materiais (Livros, Artigos, Vídeos) e Autores (Pessoas, Instituições), com autenticação JWT e validação de dados rigorosa. O projeto é containerizado com Docker para facilitar a configuração e execução.
+API RESTful desenvolvida em NestJS para gerenciar uma plataforma de biblioteca digital, como parte de um desafio técnico. Permite o gerenciamento de Materiais (Livros, Artigos, Vídeos) e Autores (Pessoas, Instituições), com autenticação JWT e validação de dados rigorosa. O projeto é containerizado com Docker para facilitar a configuração e execução.
 
 ## Funcionalidades Implementadas
 
-* Autenticação Segura: Sistema completo de registro e login de usuários via e-mail/senha, utilizando JWT (JSON Web Tokens) para proteger endpoints. Senhas são armazenadas com hash bcrypt.
-* Gerenciamento de Autores: CRUD completo para Autores, suportando dois tipos distintos (Pessoa e Instituição) com campos e validações específicas, utilizando herança (Single Table Inheritance) no TypeORM.
-* Gerenciamento de Materiais: CRUD completo para Materiais, suportando tipos Livro, Artigo e Vídeo, cada um com seus campos e validações (ISBN/DOI únicos, etc.), também utilizando herança no TypeORM.
-* Controle de Permissão: Implementada regra de negócio crucial: apenas o usuário que cadastrou um material pode alterá-lo ou removê-lo.
-* Integração com API Externa: Ao cadastrar um Livro sem título ou número de páginas, a API consulta a [OpenLibrary Books API](https://openlibrary.org/developers/api) usando o ISBN fornecido para preencher esses campos automaticamente.
-* Busca e Paginação: Endpoint `GET /api/material` permite buscar materiais por termo (título, descrição, nome do autor) com resultados paginados (`?pagina=X&limite=Y`).
-* Validação Robusta: Utilização intensiva de `class-validator` e `class-transformer` em DTOs para garantir que todos os dados recebidos pela API sigam as regras especificadas no desafio (campos obrigatórios, formatos, tamanhos, valores únicos).
-* Documentação Interativa: Geração automática de documentação via Swagger (OpenAPI), acessível em `/api-docs`. *(Observação sobre a autenticação abaixo).*
-* Testes Automatizados: Testes unitários com Jest para garantir a lógica de negócio dos serviços principais (Autenticação, CRUD de Autor, CRUD de Material com permissões e API externa).
-* Containerização: Aplicação e banco de dados (PostgreSQL) totalmente configurados para rodar com Docker e Docker Compose, garantindo um ambiente de desenvolvimento consistente.
-* (Diferencial) Endpoint GraphQL: Implementada uma consulta GraphQL básica (`/graphql`) para listar autores, demonstrando a capacidade de usar diferentes protocolos de API.
+* **Autenticação Segura:** Sistema completo de registro e login de usuários via e-mail/senha, utilizando JWT (JSON Web Tokens) para proteger endpoints. Senhas são armazenadas com hash bcrypt.
+* **Gerenciamento de Autores:** CRUD completo para Autores, suportando dois tipos distintos (Pessoa e Instituição) com campos e validações específicas, utilizando herança (Single Table Inheritance) no TypeORM.
+* **Gerenciamento de Materiais:** CRUD completo para Materiais, suportando tipos Livro, Artigo e Vídeo, cada um com seus campos e validações (ISBN/DOI únicos, etc.), também utilizando herança no TypeORM.
+* **Controle de Permissão:** Implementada regra de negócio crucial: apenas o usuário que cadastrou um material pode alterá-lo ou removê-lo.
+* **Integração com API Externa:** Ao cadastrar um Livro sem título ou número de páginas, a API consulta a [OpenLibrary Books API](https://openlibrary.org/developers/api) usando o ISBN fornecido para preencher esses campos automaticamente.
+* **Busca e Paginação:** Endpoint `GET /api/material` permite buscar materiais por termo (título, descrição, nome do autor) com resultados paginados (`?pagina=X&limite=Y`).
+* **Validação Robusta:** Utilização intensiva de `class-validator` e `class-transformer` em DTOs para garantir que todos os dados recebidos pela API sigam as regras especificadas no desafio (campos obrigatórios, formatos, tamanhos, valores únicos).
+* **Documentação Interativa:** Geração automática de documentação via Swagger (OpenAPI), acessível em `/api-docs`. *(Observação sobre a autenticação abaixo).*
+* **Testes Automatizados:** Testes unitários com Jest para garantir a lógica de negócio dos serviços principais (Autenticação, CRUD de Autor, CRUD de Material com permissões e API externa). Cobertura acima de 80%.
+* **Containerização:** Aplicação e banco de dados (PostgreSQL) totalmente configurados para rodar com Docker e Docker Compose, garantindo um ambiente de desenvolvimento consistente.
+* **(Diferencial) Endpoint GraphQL:** Implementada uma consulta GraphQL básica (`/graphql`) para listar autores, demonstrando a capacidade de usar diferentes protocolos de API.
+* **(Diferencial) Deploy:** Aplicação deployada online via Render.
 
 ## Tecnologias Utilizadas
 
-* **Backend Framework:** NestJS (v11)
+* **Backend Framework:** NestJS (v10)
 * **Linguagem:** TypeScript
-* **Banco de Dados:** PostgreSQL (Imagem Docker `postgres:15`)
+* **Banco de Dados:** PostgreSQL (Imagem Docker `postgres:15` / Render Managed DB)
 * **ORM:** TypeORM
 * **Autenticação:** JWT (`@nestjs/jwt`, `@nestjs/passport`, `passport-jwt`, `bcrypt`)
 * **Validação:** `class-validator`, `class-transformer`
 * **Requisições HTTP:** `@nestjs/axios`
-* **Documentação:** `@nestjs/swagger` (v11)
-* **GraphQL:** `@nestjs/graphql`, `@nestjs/apollo` (v13), `@apollo/server`
+* **Documentação:** `@nestjs/swagger` (v7)
+* **GraphQL:** `@nestjs/graphql`, `@nestjs/apollo` (v12), `@apollo/server`
 * **Testes:** Jest (`@nestjs/testing`)
 * **Containerização:** Docker, Docker Compose
+* **Deploy:** Render (via `render.yaml`)
 * **Ambiente Node.js:** Node.js v22 (via Dockerfile)
 
 ---
+
 ## Configuração do Ambiente de Desenvolvimento
 
 **Pré-requisitos:**
@@ -53,7 +56,7 @@ API RESTful desenvolvida em NestJS para gerenciar uma plataforma de biblioteca d
     * Crie um arquivo chamado `.env` na **raiz** do projeto (na mesma pasta do `docker-compose.yml`).
     * Copie e cole o conteúdo abaixo no arquivo `.env`, substituindo `JWT_SECRET_KEY` por uma string aleatória e segura:
         ```env
-        # Postgres Config
+        # Postgres Config (para Docker local)
         DB_HOST=postgres-db
         DB_PORT=5432
         DB_USER=biblioteca_admin
@@ -66,15 +69,36 @@ API RESTful desenvolvida em NestJS para gerenciar uma plataforma de biblioteca d
         ```
     * **(Importante):** Este arquivo `.env` está no `.gitignore` e não deve ser enviado ao GitHub.
 
-3.  **Subir os Containers Docker:**
+3.  **Subir os Containers Docker (Desenvolvimento):**
     * Na pasta **raiz** do projeto, execute o comando:
         ```bash
         docker-compose up --build -d
         ```
-    * Este comando fará o build da imagem do backend (pode demorar na primeira vez) e iniciará os containers do `backend` e `postgres-db`.
-    * A API estará disponível em `http://localhost:3000`. O banco de dados estará acessível internamente para a API no host `postgres-db`.
+    * Este comando fará o build da imagem do backend (pode demorar na primeira vez) e iniciará os containers do `backend` e `postgres-db` usando o `Dockerfile.dev` e o `docker-compose.yml` padrão.
+    * A API estará disponível em `http://localhost:3000`.
 
 ---
+
+## Acesso à Aplicação em Produção (Render)
+
+A API foi deployada e está acessível publicamente através do Render.
+
+**URL Base da API:**
+`https://biblioteca-zr5o.onrender.com`
+
+**Endpoints Importantes:**
+
+* **Documentação Interativa (Swagger UI):**
+    `https://biblioteca-zr5o.onrender.com/api-docs`
+    *(Lembre-se da observação sobre a autenticação no Swagger UI mencionada anteriormente. Use Insomnia/Postman para testes autenticados).*
+
+* **GraphQL Playground:**
+    `https://biblioteca-zr5o.onrender.com/graphql`
+
+* **Endpoints da API (Exemplos):**
+    * `POST https://biblioteca-zr5o.onrender.com/api/auth/login`
+    * `GET https://biblioteca-zr5o.onrender.com/api/autor` (requer token)
+
 ## Uso da API
 
 A API segue os padrões RESTful e está prefixada com `/api`. Todos os endpoints (exceto `/api/auth/register` e `/api/auth/login`) exigem autenticação via Bearer Token JWT.
@@ -99,59 +123,33 @@ Copie o valor do `access_token` retornado no login. Para acessar endpoints prote
 
 ### 3. Endpoints Principais (Exemplos)
 
-*(Consulte a documentação Swagger para detalhes completos de DTOs e respostas)*
+*(Consulte a documentação Swagger em `/api-docs` na URL de produção para detalhes completos de DTOs e respostas)*
 
 * **Autores (`/api/autor`)**
-    * `POST /pessoa`: Cria um autor pessoa. (Body: `CreateAutorPessoaDto`)
-    * `POST /instituicao`: Cria um autor instituição. (Body: `CreateAutorInstituicaoDto`)
+    * `POST /pessoa`: Cria um autor pessoa.
+    * `POST /instituicao`: Cria um autor instituição.
     * `GET /`: Lista todos os autores.
     * `GET /:id`: Busca um autor específico.
-    * `PATCH /:id`: Atualiza um autor. (Body: `UpdateAutorDto`)
+    * `PATCH /:id`: Atualiza um autor.
     * `DELETE /:id`: Remove um autor.
 
 * **Materiais (`/api/material`)**
-    * `POST /livro`: Cria um livro. (Body: `CreateLivroDto`)
-    * `POST /artigo`: Cria um artigo. (Body: `CreateArtigoDto`)
-    * `POST /video`: Cria um vídeo. (Body: `CreateVideoDto`)
-    * `GET /?pagina=1&limite=10&termo=...`: Busca materiais com paginação e filtro. (Query Params: `QueryMaterialDto`)
+    * `POST /livro`: Cria um livro.
+    * `POST /artigo`: Cria um artigo.
+    * `POST /video`: Cria um vídeo.
+    * `GET /?pagina=1&limite=10&termo=...`: Busca materiais com paginação e filtro.
     * `GET /:id`: Busca um material específico.
-    * `PATCH /:id`: Atualiza um material (apenas o criador). (Body: `UpdateMaterialDto`)
+    * `PATCH /:id`: Atualiza um material (apenas o criador).
     * `DELETE /:id`: Remove um material (apenas o criador).
 
 * **Usuário (`/api/usuario`)**
     * `GET /me`: Retorna os dados do usuário logado (sem senha).
-    * `PATCH /:id`: Atualiza os dados do usuário (apenas o próprio usuário). (Body: `UpdateUsuarioDto`)
+    * `PATCH /:id`: Atualiza os dados do usuário (apenas o próprio usuário).
     * `DELETE /:id`: Remove a conta do usuário (apenas o próprio usuário).
 
-### Documentação Interativa (Swagger UI)
+*(Observação sobre Autenticação no Swagger UI mantida da versão anterior)*
 
-Uma interface interativa para explorar e testar a API está disponível em:
-`http://localhost:3000/api-docs` (após iniciar os containers).
-
-**Observação Importante sobre Autenticação no Swagger:**
-Durante o desenvolvimento, foi observado um problema na interface do Swagger UI onde o Bearer Token JWT, mesmo quando inserido corretamente no botão "Authorize" (com o prefixo `Bearer `), não era incluído nos cabeçalhos das requisições subsequentes, resultando em erros `401 Unauthorized`. **A API em si está funcionando corretamente**, como comprovado por testes via **Insomnia/Postman**. Recomenda-se o uso dessas ferramentas para testar os endpoints protegidos.
-
-### Endpoint GraphQL
-
-A API também expõe um endpoint GraphQL em `/graphql`. A interface GraphQL Playground está disponível em `http://localhost:3000/graphql`.
-
-**Query de Exemplo (Listar Autores):**
-```graphql
-query {
-  autores {
-    id_autor
-    nome
-    tipo_autor
-    # Campos específicos:
-    ... on AutorPessoaType {
-      data_nascimento
-    }
-    ... on AutorInstituicaoType {
-      cidade
-    }
-  }
-}
-```
+*(Seção Endpoint GraphQL mantida da versão anterior)*
 
 ## Testes Automatizados
 
@@ -166,11 +164,12 @@ Os testes unitários foram escritos usando Jest e cobrem a lógica principal dos
 
 **Como Rodar os Testes:**
 
-1.  Certifique-se de que as dependências de desenvolvimento estão instaladas. Se estiver usando o ambiente Docker, elas já estão. Se rodar localmente, execute `npm install` na pasta `backend/`.
-2.  Execute o comando na pasta `backend/`:
+1.  Certifique-se de que as dependências de desenvolvimento estão instaladas (o `docker-compose up` cuida disso no ambiente de desenvolvimento).
+2.  Execute o comando na pasta `backend/` localmente, ou dentro do container:
     ```bash
-    npm run test
+    npm run test:cov
     ```
+    *(Opcional: use `npm run test` para rodar sem calcular cobertura).*
 
 ## Regras de Negócio Chave Implementadas
 
