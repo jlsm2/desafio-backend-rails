@@ -12,10 +12,7 @@ services:
     branch: main
     autoDeploy: yes
     dockerfilePath: ./backend/Dockerfile
-
-    # healthCheck:
-    #  path: /api/health
-    #  initialDelaySeconds: 30
+    plan: free
     envVars:
       - key: NODE_ENV
         value: production
