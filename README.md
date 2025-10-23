@@ -89,7 +89,6 @@ A API foi deployada e está acessível publicamente através do Render.
 
 * **Documentação Interativa (Swagger UI):**
     `https://biblioteca-zr5o.onrender.com/api-docs`
-    *(Lembre-se da observação sobre a autenticação no Swagger UI mencionada anteriormente. Use Insomnia/Postman para testes autenticados).*
 
 * **GraphQL Playground:**
     `https://biblioteca-zr5o.onrender.com/graphql`
