@@ -48,8 +48,7 @@ API RESTful desenvolvida em NestJS para gerenciar uma plataforma de biblioteca d
 
 1.  **Clonar o Repositório:**
     ```bash
-    git clone [https://github.com/jlsm2/desafio-backend-rails.git](https://github.com/jlsm2/desafio-backend-rails.git)
-    cd biblioteca-api
+    git clone https://github.com/jlsm2/desafio-backend-rails.git
     ```
 
 2.  **Configurar Variáveis de Ambiente:**
