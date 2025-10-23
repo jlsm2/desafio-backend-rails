@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: backend
+    name: biblioteca
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     plan: free
