@@ -18,15 +18,15 @@ API RESTful desenvolvida em NestJS para gerenciar uma plataforma de biblioteca d
 
 ## Tecnologias Utilizadas
 
-* **Backend Framework:** NestJS (v10)
+* **Backend Framework:** NestJS (v11)
 * **Linguagem:** TypeScript
 * **Banco de Dados:** PostgreSQL (Imagem Docker `postgres:15`)
 * **ORM:** TypeORM
 * **Autenticação:** JWT (`@nestjs/jwt`, `@nestjs/passport`, `passport-jwt`, `bcrypt`)
 * **Validação:** `class-validator`, `class-transformer`
 * **Requisições HTTP:** `@nestjs/axios`
-* **Documentação:** `@nestjs/swagger` (v7)
-* **GraphQL:** `@nestjs/graphql`, `@nestjs/apollo` (v12), `@apollo/server`
+* **Documentação:** `@nestjs/swagger` (v11)
+* **GraphQL:** `@nestjs/graphql`, `@nestjs/apollo` (v13), `@apollo/server`
 * **Testes:** Jest (`@nestjs/testing`)
 * **Containerização:** Docker, Docker Compose
 * **Ambiente Node.js:** Node.js v22 (via Dockerfile)
